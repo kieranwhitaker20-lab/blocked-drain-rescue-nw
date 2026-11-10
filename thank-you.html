@@ -36,7 +36,7 @@ header{position:sticky !important;top:0 !important;z-index:100 !important;backgr
 .nav nav{display:flex !important;align-items:center !important;gap:2px;flex:1;justify-content:center}
 .nav .btn{flex-shrink:0 !important;white-space:nowrap !important;margin:0 !important;align-self:center !important}
 .logoimg{height:58px !important;max-width:260px !important;object-fit:contain;flex-shrink:0}
-@media(max-width:1000px){.nav nav{display:none !important} .badge{display:none !important}}
+
 @media(max-width:860px){
   .nav{padding:10px 14px !important}
   .logoimg{height:64px !important;max-width:270px !important}
@@ -46,6 +46,27 @@ header{position:sticky !important;top:0 !important;z-index:100 !important;backgr
 @media(max-width:420px){
   .logoimg{height:58px !important;max-width:210px !important}
   .nav .btn{padding:10px 11px !important}
+}
+
+/* V9 MENU FIX: desktop shows menu, mobile shows hamburger - never both hidden */
+header{position:sticky !important;top:0 !important;z-index:100 !important;background:#fff !important}
+.nav{display:flex !important;align-items:center !important;justify-content:space-between !important;flex-wrap:nowrap !important;gap:12px}
+.nav nav{display:flex !important;align-items:center !important;gap:2px;flex:1;justify-content:center}
+.nav nav a{white-space:nowrap}
+.hamburger{display:none !important}
+.mobile-drawer{display:none}
+@media(max-width:860px){
+  .nav nav{display:none !important}
+  .badge{display:none !important}
+  .hamburger{display:flex !important;align-items:center;justify-content:center}
+  .mobile-drawer{display:flex}
+  .logoimg{height:64px !important;max-width:270px !important}
+}
+@media(min-width:861px){
+  .nav nav{display:flex !important}
+  .hamburger{display:none !important}
+  .mobile-drawer{display:none !important}
+  .drawer-overlay{display:none !important}
 }
 </style></head><body style="font-family:system-ui;padding:40px;text-align:center"><h1>Thanks — we got it ✅</h1><p>We will call you back shortly.</p><p><b>Flooding?</b> Call <a href="tel:01772439368">01772 439368</a></p><p><a href="index.html">← Back to Home</a></p>
 <button class="hamburger" aria-label="Open menu" onclick="document.getElementById('mobileDrawer').classList.add('open');document.getElementById('drawerOverlay').classList.add('show')">☰</button>
