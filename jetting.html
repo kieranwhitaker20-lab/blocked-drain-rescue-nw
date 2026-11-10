@@ -90,6 +90,11 @@ header{position:sticky !important;top:0 !important;z-index:100 !important;backgr
   .mobile-drawer{display:none !important}
   .drawer-overlay{display:none !important}
 }
+
+/* V10 VAN: hero = van, van as faint background on every page */
+body{position:relative}
+body::before{content:"";position:fixed;inset:0;background-image:url('van.jpg');background-size:cover;background-position:center;background-repeat:no-repeat;opacity:0.07;z-index:-1;pointer-events:none}
+.hero img{aspect-ratio:16/10 !important;object-fit:cover !important}
 </style></head><body><div class="top">⭐ Mon–Sun: 24/7 Call-Outs &nbsp;|&nbsp; Based in Preston &nbsp;|&nbsp; <b>Partnered with SB Drainage</b></div>
 <header><div class="nav"><a href="index.html"><img class="logoimg" src="logo.png" alt="Blocked Drain Rescue NW"></a><span class="badge">🤝 Partnered with SB Drainage</span><nav><a href="index.html">Home</a><a href="blocked-drains.html">Blocked Drains</a><a href="cctv-surveys.html">CCTV Surveys</a><a href="jetting.html">Jetting</a><a href="drain-repairs.html">Repairs</a><a href="areas.html">Areas</a><a href="contact.html">Contact</a></nav><a class="btn" href="tel:01772439368">📞 Call Us</a></div>
 <button class="hamburger" aria-label="Open menu" onclick="document.getElementById('mobileDrawer').classList.add('open');document.getElementById('drawerOverlay').classList.add('show')">☰</button>
@@ -107,7 +112,7 @@ header{position:sticky !important;top:0 !important;z-index:100 !important;backgr
   <a class="drawer-cta2" href="tel:01772439368">📞 Emergency? Call Us</a>
   <p style="font-size:13px;color:#64748b;padding:10px 4px">🤝 Partnered with SB Drainage<br>🕒 Mon–Sun: 24/7 Call-Outs</p>
 </div>
-</header><div class="wrap">
+</header><div style="max-width:1220px;margin:14px auto 0;padding:0 20px"><img src="van.jpg" alt="Blocked Drain Rescue NW van" style="width:100%;height:280px;object-fit:cover;border-radius:18px;display:block;box-shadow:0 10px 30px rgba(0,0,0,.12)"></div><div class="wrap">
 <p class="breadcrumb"><a href="index.html">Home</a> → High-Pressure Water Jetting</p>
 <div class="split"><div><span class="pill">Blocked Drain Rescue NW • Preston & North West</span><h1>High-Pressure Water Jetting</h1><p class="lead">Jetting doesn’t just poke a hole through a blockage — it cleans the pipe wall, removing grease, scale, silt and debris.</p><ul class="check"><li>Grease & scale build-up</li><li>Silt & debris</li><li>Preventative cleans</li><li>Commercial kitchens & drains</li></ul><a class="btn" href="contact.html">Get a Free Quote →</a></div><div><img class="card-img" src="cctv.webp" alt="High-Pressure Water Jetting"></div></div>
 <section><h2>What we do on this job</h2><p>We use high-pressure water to blast the build-up out and leave the pipe flowing freely. Great for kitchen runs, long runs, and drains that keep slowing down.</p></section>
