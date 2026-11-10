@@ -22,11 +22,18 @@
   .drawer-cta{margin-top:14px !important;background:#0e7cff !important;color:#fff !important;text-align:center;border-bottom:0 !important}
   .drawer-cta2{margin-top:8px !important;background:#ffc400 !important;color:#16233a !important;text-align:center;border-bottom:0 !important}
 }
+
+/* STICKY HEADER - logo left, hamburger right, in line */
+header{position:sticky !important;top:0 !important;z-index:100 !important;background:#fff !important}
+.nav{display:flex !important;align-items:center !important;justify-content:space-between !important;flex-wrap:nowrap !important}
+.logoimg{height:52px !important;max-width:230px !important;object-fit:contain}
+.hamburger{margin-left:auto !important}
+@media(max-width:860px){.logoimg{height:44px !important;max-width:200px !important}}
 </style></head><body style="font-family:system-ui;padding:40px;text-align:center"><h1>Thanks — we got it ✅</h1><p>We will call you back shortly.</p><p><b>Flooding?</b> Call <a href="tel:YOUR-PHONE-NUMBER">[YOUR PHONE NUMBER]</a></p><p><a href="index.html">← Back to Home</a></p>
 <button class="hamburger" aria-label="Open menu" onclick="document.getElementById('mobileDrawer').classList.add('open');document.getElementById('drawerOverlay').classList.add('show')">☰</button>
 <div class="drawer-overlay" id="drawerOverlay" onclick="document.getElementById('mobileDrawer').classList.remove('open');this.classList.remove('show')"></div>
 <div class="mobile-drawer" id="mobileDrawer">
-  <div class="drawer-head"><img src="logo.jpg" alt="Blocked Drain Rescue NW"><button class="drawer-close" aria-label="Close menu" onclick="document.getElementById('mobileDrawer').classList.remove('open');document.getElementById('drawerOverlay').classList.remove('show')">✕</button></div>
+  <div class="drawer-head"><img src="logo.png" alt="Blocked Drain Rescue NW"><button class="drawer-close" aria-label="Close menu" onclick="document.getElementById('mobileDrawer').classList.remove('open');document.getElementById('drawerOverlay').classList.remove('show')">✕</button></div>
   <a href="index.html">🏠 Home</a>
   <a href="blocked-drains.html">🚽 Blocked Drains</a>
   <a href="cctv-surveys.html">📹 CCTV Surveys</a>
