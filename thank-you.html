@@ -29,7 +29,25 @@ header{position:sticky !important;top:0 !important;z-index:100 !important;backgr
 .logoimg{height:52px !important;max-width:230px !important;object-fit:contain}
 .hamburger{margin-left:auto !important}
 @media(max-width:860px){.logoimg{height:44px !important;max-width:200px !important}}
-</style></head><body style="font-family:system-ui;padding:40px;text-align:center"><h1>Thanks — we got it ✅</h1><p>We will call you back shortly.</p><p><b>Flooding?</b> Call <a href="tel:YOUR-PHONE-NUMBER">[YOUR PHONE NUMBER]</a></p><p><a href="index.html">← Back to Home</a></p>
+
+/* V8 FIXES: bigger mobile logo + neat desktop Call button */
+header{position:sticky !important;top:0 !important;z-index:100 !important;background:#fff !important;box-shadow:0 4px 20px rgba(0,0,0,.08)}
+.nav{display:flex !important;align-items:center !important;justify-content:space-between !important;flex-wrap:nowrap !important;gap:12px}
+.nav nav{display:flex !important;align-items:center !important;gap:2px;flex:1;justify-content:center}
+.nav .btn{flex-shrink:0 !important;white-space:nowrap !important;margin:0 !important;align-self:center !important}
+.logoimg{height:58px !important;max-width:260px !important;object-fit:contain;flex-shrink:0}
+@media(max-width:1000px){.nav nav{display:none !important} .badge{display:none !important}}
+@media(max-width:860px){
+  .nav{padding:10px 14px !important}
+  .logoimg{height:64px !important;max-width:270px !important}
+  .nav .btn{padding:11px 14px !important;font-size:14px !important}
+  .hamburger{width:48px !important;height:48px !important;font-size:24px !important}
+}
+@media(max-width:420px){
+  .logoimg{height:58px !important;max-width:210px !important}
+  .nav .btn{padding:10px 11px !important}
+}
+</style></head><body style="font-family:system-ui;padding:40px;text-align:center"><h1>Thanks — we got it ✅</h1><p>We will call you back shortly.</p><p><b>Flooding?</b> Call <a href="tel:01772439368">01772 439368</a></p><p><a href="index.html">← Back to Home</a></p>
 <button class="hamburger" aria-label="Open menu" onclick="document.getElementById('mobileDrawer').classList.add('open');document.getElementById('drawerOverlay').classList.add('show')">☰</button>
 <div class="drawer-overlay" id="drawerOverlay" onclick="document.getElementById('mobileDrawer').classList.remove('open');this.classList.remove('show')"></div>
 <div class="mobile-drawer" id="mobileDrawer">
@@ -42,7 +60,7 @@ header{position:sticky !important;top:0 !important;z-index:100 !important;backgr
   <a href="areas.html">📍 Areas</a>
   <a href="contact.html">✉️ Contact / Get a Quote</a>
   <a class="drawer-cta" href="contact.html">Get A Quote →</a>
-  <a class="drawer-cta2" href="tel:YOUR-PHONE-NUMBER">📞 Emergency? Call Us</a>
+  <a class="drawer-cta2" href="tel:01772439368">📞 Emergency? Call Us</a>
   <p style="font-size:13px;color:#64748b;padding:10px 4px">🤝 Partnered with SB Drainage<br>🕒 Mon–Sun: 24/7 Call-Outs</p>
 </div>
 </body></html>

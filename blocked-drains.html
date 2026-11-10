@@ -51,8 +51,26 @@ header{position:sticky !important;top:0 !important;z-index:100 !important;backgr
 .logoimg{height:52px !important;max-width:230px !important;object-fit:contain}
 .hamburger{margin-left:auto !important}
 @media(max-width:860px){.logoimg{height:44px !important;max-width:200px !important}}
+
+/* V8 FIXES: bigger mobile logo + neat desktop Call button */
+header{position:sticky !important;top:0 !important;z-index:100 !important;background:#fff !important;box-shadow:0 4px 20px rgba(0,0,0,.08)}
+.nav{display:flex !important;align-items:center !important;justify-content:space-between !important;flex-wrap:nowrap !important;gap:12px}
+.nav nav{display:flex !important;align-items:center !important;gap:2px;flex:1;justify-content:center}
+.nav .btn{flex-shrink:0 !important;white-space:nowrap !important;margin:0 !important;align-self:center !important}
+.logoimg{height:58px !important;max-width:260px !important;object-fit:contain;flex-shrink:0}
+@media(max-width:1000px){.nav nav{display:none !important} .badge{display:none !important}}
+@media(max-width:860px){
+  .nav{padding:10px 14px !important}
+  .logoimg{height:64px !important;max-width:270px !important}
+  .nav .btn{padding:11px 14px !important;font-size:14px !important}
+  .hamburger{width:48px !important;height:48px !important;font-size:24px !important}
+}
+@media(max-width:420px){
+  .logoimg{height:58px !important;max-width:210px !important}
+  .nav .btn{padding:10px 11px !important}
+}
 </style></head><body><div class="top">⭐ Mon–Sun: 24/7 Call-Outs &nbsp;|&nbsp; Based in Preston &nbsp;|&nbsp; <b>Partnered with SB Drainage</b></div>
-<header><div class="nav"><a href="index.html"><img class="logoimg" src="logo.png" alt="Blocked Drain Rescue NW"></a><span class="badge">🤝 Partnered with SB Drainage</span><nav><a href="index.html">Home</a><a href="blocked-drains.html">Blocked Drains</a><a href="cctv-surveys.html">CCTV Surveys</a><a href="jetting.html">Jetting</a><a href="drain-repairs.html">Repairs</a><a href="areas.html">Areas</a><a href="contact.html">Contact</a></nav><a class="btn" href="tel:YOUR-PHONE-NUMBER">📞 Call Us</a></div>
+<header><div class="nav"><a href="index.html"><img class="logoimg" src="logo.png" alt="Blocked Drain Rescue NW"></a><span class="badge">🤝 Partnered with SB Drainage</span><nav><a href="index.html">Home</a><a href="blocked-drains.html">Blocked Drains</a><a href="cctv-surveys.html">CCTV Surveys</a><a href="jetting.html">Jetting</a><a href="drain-repairs.html">Repairs</a><a href="areas.html">Areas</a><a href="contact.html">Contact</a></nav><a class="btn" href="tel:01772439368">📞 Call Us</a></div>
 <button class="hamburger" aria-label="Open menu" onclick="document.getElementById('mobileDrawer').classList.add('open');document.getElementById('drawerOverlay').classList.add('show')">☰</button>
 <div class="drawer-overlay" id="drawerOverlay" onclick="document.getElementById('mobileDrawer').classList.remove('open');this.classList.remove('show')"></div>
 <div class="mobile-drawer" id="mobileDrawer">
@@ -65,12 +83,12 @@ header{position:sticky !important;top:0 !important;z-index:100 !important;backgr
   <a href="areas.html">📍 Areas</a>
   <a href="contact.html">✉️ Contact / Get a Quote</a>
   <a class="drawer-cta" href="contact.html">Get A Quote →</a>
-  <a class="drawer-cta2" href="tel:YOUR-PHONE-NUMBER">📞 Emergency? Call Us</a>
+  <a class="drawer-cta2" href="tel:01772439368">📞 Emergency? Call Us</a>
   <p style="font-size:13px;color:#64748b;padding:10px 4px">🤝 Partnered with SB Drainage<br>🕒 Mon–Sun: 24/7 Call-Outs</p>
 </div>
 </header><div class="wrap">
 <p class="breadcrumb"><a href="index.html">Home</a> → Blocked Drains & Toilets</p>
 <div class="split"><div><span class="pill">Blocked Drain Rescue NW • Preston & North West</span><h1>Blocked Drains & Toilets</h1><p class="lead">Blocked drain, overflowing manhole or toilet that won’t flush? We clear it properly, test it, and tell you why it blocked.</p><ul class="check"><li>Emergency unblocks</li><li>Repeat blockages</li><li>Outside drains & manholes</li><li>Sinks, showers & baths</li></ul><a class="btn" href="contact.html">Get a Free Quote →</a></div><div><img class="card-img" src="cctv.webp" alt="Blocked Drains & Toilets"></div></div>
 <section><h2>What we do on this job</h2><p>We start with a check of the run, clear with rodding and jetting where needed, then flush and flow-test before we leave. If it keeps blocking, we’ll recommend a CCTV survey so you’re not paying for the same unblock every few weeks.</p></section>
-<div class="strip" style="margin:30px -16px 0;border-radius:16px"><div class="wrap"><div><b style="font-size:20px">Flooding inside? Toilet overflowing? Don’t wait.</b><div>Call now — emergencies are prioritised today.</div></div><a class="btn dark" href="tel:YOUR-PHONE-NUMBER">Call [YOUR PHONE NUMBER]</a></div></div><p style="text-align:center;margin-top:20px"><a class="btn" href="contact.html">Get a Free Quote →</a> &nbsp; <a class="btn yellow" href="tel:YOUR-PHONE-NUMBER">Call Now</a></p>
-</div><footer><div class="wrap footer-grid"><div><img src="logo.png" alt="Blocked Drain Rescue NW" style="height:54px;max-width:260px;object-fit:contain;background:#fff;padding:6px;border-radius:10px"><p>Blocked drains, jetting & CCTV surveys across Preston & the North West.</p><p><b style="color:#ffc400">🤝 Partnered with SB Drainage</b></p></div><div><b style="color:#fff">Contact Information</b><p>📞 <a href="tel:YOUR-PHONE-NUMBER" style="color:#fff">[YOUR PHONE NUMBER]</a><br>✉️ <a href="mailto:YOUR-EMAIL@EXAMPLE.COM" style="color:#fff">[YOUR EMAIL]</a><br>📍 Based in Preston<br>🕒 Mon–Sun: 24/7 Call-Outs</p></div><div><b style="color:#fff">Areas Covered</b><p>Preston • Leyland • Chorley • Blackburn • Bolton • Southport • Wigan • Lancaster • Manchester</p><p>© 2026 Blocked Drain Rescue NW. All rights reserved.</p></div></div></footer><div class="callbar"><span><b>Blocked drain?</b> Call now — 24/7</span><a class="btn yellow" href="tel:YOUR-PHONE-NUMBER">📞 Call</a></div></body></html>
+<div class="strip" style="margin:30px -16px 0;border-radius:16px"><div class="wrap"><div><b style="font-size:20px">Flooding inside? Toilet overflowing? Don’t wait.</b><div>Call now — emergencies are prioritised today.</div></div><a class="btn dark" href="tel:01772439368">Call 01772 439368</a></div></div><p style="text-align:center;margin-top:20px"><a class="btn" href="contact.html">Get a Free Quote →</a> &nbsp; <a class="btn yellow" href="tel:01772439368">Call Now</a></p>
+</div><footer><div class="wrap footer-grid"><div><img src="logo.png" alt="Blocked Drain Rescue NW" style="height:54px;max-width:260px;object-fit:contain;background:#fff;padding:6px;border-radius:10px"><p>Blocked drains, jetting & CCTV surveys across Preston & the North West.</p><p><b style="color:#ffc400">🤝 Partnered with SB Drainage</b></p></div><div><b style="color:#fff">Contact Information</b><p>📞 <a href="tel:01772439368" style="color:#fff">01772 439368</a><br>✉️ <a href="mailto:enquiries@bdrnw.co.uk" style="color:#fff">enquiries@bdrnw.co.uk</a><br>📍 Based in Preston<br>🕒 Mon–Sun: 24/7 Call-Outs</p></div><div><b style="color:#fff">Areas Covered</b><p>Preston • Leyland • Chorley • Blackburn • Bolton • Southport • Wigan • Lancaster • Manchester</p><p>© 2026 Blocked Drain Rescue NW. All rights reserved.</p></div></div></footer><div class="callbar"><span><b>Blocked drain?</b> Call now — 24/7</span><a class="btn yellow" href="tel:01772439368">📞 Call</a></div></body></html>
