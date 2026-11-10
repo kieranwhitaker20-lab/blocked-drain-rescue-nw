@@ -20,8 +20,48 @@ footer{background:#0b1f3a;color:#cbd5e1;padding:38px 0}.footer-grid{display:grid
 .breadcrumb{font-size:13px;color:#64748b;margin:14px 0}.breadcrumb a{color:#0e7cff}
 @media(max-width:860px){.hero,.split,.formbox,.footer-grid{grid-template-columns:1fr}.grid{grid-template-columns:1fr 1fr}.hero h1{font-size:36px}}
 @media(max-width:520px){.grid{grid-template-columns:1fr}.logoimg{height:46px}}
+
+/* --- MOBILE HEADER - SB STYLE --- */
+.hamburger{display:none;background:#0b1f3a;color:#fff;border:0;width:44px;height:44px;border-radius:10px;font-size:22px;cursor:pointer;line-height:1;flex-shrink:0}
+.mobile-drawer{display:none}
+.drawer-overlay{display:none}
+@media(max-width:860px){
+  .nav{flex-wrap:nowrap !important;padding:10px 14px !important}
+  .nav nav{display:none !important}
+  .badge{display:none !important}
+  .logoimg{height:46px !important;max-width:190px !important}
+  .nav .btn{padding:10px 14px !important;font-size:14px !important}
+  .hamburger{display:flex !important;align-items:center;justify-content:center}
+  .mobile-drawer{display:flex;flex-direction:column;position:fixed;top:0;right:-320px;width:300px;max-width:85vw;height:100dvh;background:#fff;box-shadow:-10px 0 30px rgba(0,0,0,.25);z-index:100;padding:18px;transition:right .28s ease;gap:4px;overflow-y:auto}
+  .mobile-drawer.open{right:0}
+  .mobile-drawer a{padding:14px 12px;border-radius:10px;text-decoration:none;color:#16233a;font-weight:700;font-size:17px;border-bottom:1px solid #eef2f7}
+  .mobile-drawer a:hover{background:#eef6ff}
+  .mobile-drawer .drawer-head{display:flex;justify-content:space-between;align-items:center;padding-bottom:12px;border-bottom:2px solid #0b1f3a;margin-bottom:8px}
+  .mobile-drawer .drawer-head img{height:42px;max-width:180px;object-fit:contain}
+  .drawer-close{background:#f1f5f9;border:0;width:38px;height:38px;border-radius:50%;font-size:20px;cursor:pointer;flex-shrink:0}
+  .drawer-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:90}
+  .drawer-overlay.show{display:block}
+  .drawer-cta{margin-top:14px !important;background:#0e7cff !important;color:#fff !important;text-align:center;border-bottom:0 !important}
+  .drawer-cta2{margin-top:8px !important;background:#ffc400 !important;color:#16233a !important;text-align:center;border-bottom:0 !important}
+}
 </style></head><body><div class="top">⭐ Mon–Sun: 24/7 Call-Outs &nbsp;|&nbsp; Based in Preston &nbsp;|&nbsp; <b>Partnered with SB Drainage</b></div>
-<header><div class="nav"><a href="index.html"><img class="logoimg" src="logo.jpg" alt="Blocked Drain Rescue NW"></a><span class="badge">🤝 Partnered with SB Drainage</span><nav><a href="index.html">Home</a><a href="blocked-drains.html">Blocked Drains</a><a href="cctv-surveys.html">CCTV Surveys</a><a href="jetting.html">Jetting</a><a href="drain-repairs.html">Repairs</a><a href="areas.html">Areas</a><a href="contact.html">Contact</a></nav><a class="btn" href="tel:YOUR-PHONE-NUMBER">📞 Call Us</a></div></header><div class="wrap">
+<header><div class="nav"><a href="index.html"><img class="logoimg" src="logo.jpg" alt="Blocked Drain Rescue NW"></a><span class="badge">🤝 Partnered with SB Drainage</span><nav><a href="index.html">Home</a><a href="blocked-drains.html">Blocked Drains</a><a href="cctv-surveys.html">CCTV Surveys</a><a href="jetting.html">Jetting</a><a href="drain-repairs.html">Repairs</a><a href="areas.html">Areas</a><a href="contact.html">Contact</a></nav><a class="btn" href="tel:YOUR-PHONE-NUMBER">📞 Call Us</a></div>
+<button class="hamburger" aria-label="Open menu" onclick="document.getElementById('mobileDrawer').classList.add('open');document.getElementById('drawerOverlay').classList.add('show')">☰</button>
+<div class="drawer-overlay" id="drawerOverlay" onclick="document.getElementById('mobileDrawer').classList.remove('open');this.classList.remove('show')"></div>
+<div class="mobile-drawer" id="mobileDrawer">
+  <div class="drawer-head"><img src="logo.jpg" alt="Blocked Drain Rescue NW"><button class="drawer-close" aria-label="Close menu" onclick="document.getElementById('mobileDrawer').classList.remove('open');document.getElementById('drawerOverlay').classList.remove('show')">✕</button></div>
+  <a href="index.html">🏠 Home</a>
+  <a href="blocked-drains.html">🚽 Blocked Drains</a>
+  <a href="cctv-surveys.html">📹 CCTV Surveys</a>
+  <a href="jetting.html">💦 Jetting</a>
+  <a href="drain-repairs.html">🌳 Repairs</a>
+  <a href="areas.html">📍 Areas</a>
+  <a href="contact.html">✉️ Contact / Get a Quote</a>
+  <a class="drawer-cta" href="contact.html">Get A Quote →</a>
+  <a class="drawer-cta2" href="tel:YOUR-PHONE-NUMBER">📞 Emergency? Call Us</a>
+  <p style="font-size:13px;color:#64748b;padding:10px 4px">🤝 Partnered with SB Drainage<br>🕒 Mon–Sun: 24/7 Call-Outs</p>
+</div>
+</header><div class="wrap">
 <div class="hero"><div><span class="pill">Drainage in Preston | Covering North West</span><h1>Blocked Drain?<br><em>We’ll Get It Flowing<br>Again — Fast.</em></h1><p class="lead">Blocked Drain Rescue NW clears blocked drains, toilets, sinks and outside drains for homes and businesses. We find the cause, clear it properly, and test it before we leave — with a clear quote before any work starts.</p><div style="display:flex;gap:12px;flex-wrap:wrap"><a class="btn" href="contact.html">Get A Quote →</a><a class="btn yellow" href="tel:YOUR-PHONE-NUMBER">Call [YOUR PHONE NUMBER]</a></div><div class="trust"><span>✔ Domestic & Commercial</span><span>✔ Transparent quotes</span><span>✔ Fully insured</span><span>✔ Partnered with SB Drainage</span></div></div><div><img src="hero.webp" alt="Engineer clearing a blocked drain"></div></div>
 
 <section><span style="color:#0e7cff;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;font-size:13px">About Us</span><h2 style="font-size:38px">Rooted in Preston,<br>Serving the North West.</h2><h3>Delivering Quality Drainage Since 2015</h3>
@@ -44,9 +84,9 @@ footer{background:#0b1f3a;color:#cbd5e1;padding:38px 0}.footer-grid{display:grid
 <span style="color:#0e7cff;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;font-size:13px">What We Do</span>
 <h2 style="font-size:34px">Drainage Services — In Detail</h2>
 <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:18px">
-<div style="border:1px solid #e2e8f0;border-radius:18px;padding:24px;background:#fff"><h3>🚽 Blocked Drains</h3><p>Blocked drains bring smells, slow draining and backups into your home or business. We clear the debris quickly using high-pressure jetting and hands-on methods, keeping disruption to a minimum.</p><p>Once it’s clear, we check the flow and explain what caused it — so you’re less likely to get the same blockage again.</p><ul><li>Toilets, sinks & outside drains</li><li>Overflowing manholes & gullies</li><li>Flow test before we leave</li></ul><a href="blocked-drains.html">Blocked drains page →</a></div>
-<div style="border:1px solid #e2e8f0;border-radius:18px;padding:24px;background:#fff"><h3>📹 CCTV Surveys</h3><p>Our CCTV surveys let us look inside your pipes without digging. A small camera travels down the drain and shows us exactly where the fault or blockage is.</p><p>Using locators we pinpoint the problem accurately and advise on the right repair. Because it’s non-invasive, it avoids unnecessary excavation and saves you time and money.</p><ul><li>Find cracks, roots & collapsed sections</li><li>Accurate location of the fault</li><li>Footage + clear recommendations</li></ul><a href="cctv-surveys.html">CCTV surveys page →</a></div>
-<div style="border:1px solid #e2e8f0;border-radius:18px;padding:24px;background:#fff"><h3>💦 Drain Cleaning</h3><p>We shift stubborn build-up with powerful water jetting. Our engineers set the pressure to suit your pipe material, clearing roots, scale and grease safely.</p><p>Regular cleaning keeps pipes flowing, helps them last longer, and stops the same blockage coming back again and again.</p><ul><li>Grease, scale & silt removed</li><li>Pressure matched to your pipes</li><li>Ideal for repeat blockages</li></ul><a href="jetting.html">Jetting / cleaning page →</a></div>
+<div style="border:1px solid #e2e8f0;border-radius:18px;padding:24px;background:#fff"><h3>🚽 Blocked Drains</h3><p>Blocked drains bring smells, slow draining and backups into your home or business. We clear the debris quickly using high-pressure jetting and hands-on methods, keeping disruption to a minimum.</p><p>Once it’s clear, we check the flow and explain what caused it — so you’re less likely to get the same blockage again.</p><ul><li>Toilets, sinks & outside drains</li><li>Overflowing manholes & gullies</li><li>Flow test before we leave</li></ul><a href="blocked-drains.html">Blocked drains →</a></div>
+<div style="border:1px solid #e2e8f0;border-radius:18px;padding:24px;background:#fff"><h3>📹 CCTV Surveys</h3><p>Our CCTV surveys let us look inside your pipes without digging. A small camera travels down the drain and shows us exactly where the fault or blockage is.</p><p>Using locators we pinpoint the problem accurately and advise on the right repair. Because it’s non-invasive, it avoids unnecessary excavation and saves you time and money.</p><ul><li>Find cracks, roots & collapsed sections</li><li>Accurate location of the fault</li><li>Footage + clear recommendations</li></ul><a href="cctv-surveys.html">CCTV surveys →</a></div>
+<div style="border:1px solid #e2e8f0;border-radius:18px;padding:24px;background:#fff"><h3>💦 Drain Cleaning</h3><p>We shift stubborn build-up with powerful water jetting. Our engineers set the pressure to suit your pipe material, clearing roots, scale and grease safely.</p><p>Regular cleaning keeps pipes flowing, helps them last longer, and stops the same blockage coming back again and again.</p><ul><li>Grease, scale & silt removed</li><li>Pressure matched to your pipes</li><li>Ideal for repeat blockages</li></ul><a href="jetting.html">Jetting →</a></div>
 </div></section>
 
 <section style="background:#0b1f3a;color:#fff;border-radius:20px;padding:36px 24px">

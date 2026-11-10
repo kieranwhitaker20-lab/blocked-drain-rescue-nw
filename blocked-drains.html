@@ -20,8 +20,48 @@ footer{background:#0b1f3a;color:#cbd5e1;padding:38px 0}.footer-grid{display:grid
 .breadcrumb{font-size:13px;color:#64748b;margin:14px 0}.breadcrumb a{color:#0e7cff}
 @media(max-width:860px){.hero,.split,.formbox,.footer-grid{grid-template-columns:1fr}.grid{grid-template-columns:1fr 1fr}.hero h1{font-size:36px}}
 @media(max-width:520px){.grid{grid-template-columns:1fr}.logoimg{height:46px}}
+
+/* --- MOBILE HEADER - SB STYLE --- */
+.hamburger{display:none;background:#0b1f3a;color:#fff;border:0;width:44px;height:44px;border-radius:10px;font-size:22px;cursor:pointer;line-height:1;flex-shrink:0}
+.mobile-drawer{display:none}
+.drawer-overlay{display:none}
+@media(max-width:860px){
+  .nav{flex-wrap:nowrap !important;padding:10px 14px !important}
+  .nav nav{display:none !important}
+  .badge{display:none !important}
+  .logoimg{height:46px !important;max-width:190px !important}
+  .nav .btn{padding:10px 14px !important;font-size:14px !important}
+  .hamburger{display:flex !important;align-items:center;justify-content:center}
+  .mobile-drawer{display:flex;flex-direction:column;position:fixed;top:0;right:-320px;width:300px;max-width:85vw;height:100dvh;background:#fff;box-shadow:-10px 0 30px rgba(0,0,0,.25);z-index:100;padding:18px;transition:right .28s ease;gap:4px;overflow-y:auto}
+  .mobile-drawer.open{right:0}
+  .mobile-drawer a{padding:14px 12px;border-radius:10px;text-decoration:none;color:#16233a;font-weight:700;font-size:17px;border-bottom:1px solid #eef2f7}
+  .mobile-drawer a:hover{background:#eef6ff}
+  .mobile-drawer .drawer-head{display:flex;justify-content:space-between;align-items:center;padding-bottom:12px;border-bottom:2px solid #0b1f3a;margin-bottom:8px}
+  .mobile-drawer .drawer-head img{height:42px;max-width:180px;object-fit:contain}
+  .drawer-close{background:#f1f5f9;border:0;width:38px;height:38px;border-radius:50%;font-size:20px;cursor:pointer;flex-shrink:0}
+  .drawer-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:90}
+  .drawer-overlay.show{display:block}
+  .drawer-cta{margin-top:14px !important;background:#0e7cff !important;color:#fff !important;text-align:center;border-bottom:0 !important}
+  .drawer-cta2{margin-top:8px !important;background:#ffc400 !important;color:#16233a !important;text-align:center;border-bottom:0 !important}
+}
 </style></head><body><div class="top">⭐ Mon–Sun: 24/7 Call-Outs &nbsp;|&nbsp; Based in Preston &nbsp;|&nbsp; <b>Partnered with SB Drainage</b></div>
-<header><div class="nav"><a href="index.html"><img class="logoimg" src="logo.jpg" alt="Blocked Drain Rescue NW"></a><span class="badge">🤝 Partnered with SB Drainage</span><nav><a href="index.html">Home</a><a href="blocked-drains.html">Blocked Drains</a><a href="cctv-surveys.html">CCTV Surveys</a><a href="jetting.html">Jetting</a><a href="drain-repairs.html">Repairs</a><a href="areas.html">Areas</a><a href="contact.html">Contact</a></nav><a class="btn" href="tel:YOUR-PHONE-NUMBER">📞 Call Us</a></div></header><div class="wrap">
+<header><div class="nav"><a href="index.html"><img class="logoimg" src="logo.jpg" alt="Blocked Drain Rescue NW"></a><span class="badge">🤝 Partnered with SB Drainage</span><nav><a href="index.html">Home</a><a href="blocked-drains.html">Blocked Drains</a><a href="cctv-surveys.html">CCTV Surveys</a><a href="jetting.html">Jetting</a><a href="drain-repairs.html">Repairs</a><a href="areas.html">Areas</a><a href="contact.html">Contact</a></nav><a class="btn" href="tel:YOUR-PHONE-NUMBER">📞 Call Us</a></div>
+<button class="hamburger" aria-label="Open menu" onclick="document.getElementById('mobileDrawer').classList.add('open');document.getElementById('drawerOverlay').classList.add('show')">☰</button>
+<div class="drawer-overlay" id="drawerOverlay" onclick="document.getElementById('mobileDrawer').classList.remove('open');this.classList.remove('show')"></div>
+<div class="mobile-drawer" id="mobileDrawer">
+  <div class="drawer-head"><img src="logo.jpg" alt="Blocked Drain Rescue NW"><button class="drawer-close" aria-label="Close menu" onclick="document.getElementById('mobileDrawer').classList.remove('open');document.getElementById('drawerOverlay').classList.remove('show')">✕</button></div>
+  <a href="index.html">🏠 Home</a>
+  <a href="blocked-drains.html">🚽 Blocked Drains</a>
+  <a href="cctv-surveys.html">📹 CCTV Surveys</a>
+  <a href="jetting.html">💦 Jetting</a>
+  <a href="drain-repairs.html">🌳 Repairs</a>
+  <a href="areas.html">📍 Areas</a>
+  <a href="contact.html">✉️ Contact / Get a Quote</a>
+  <a class="drawer-cta" href="contact.html">Get A Quote →</a>
+  <a class="drawer-cta2" href="tel:YOUR-PHONE-NUMBER">📞 Emergency? Call Us</a>
+  <p style="font-size:13px;color:#64748b;padding:10px 4px">🤝 Partnered with SB Drainage<br>🕒 Mon–Sun: 24/7 Call-Outs</p>
+</div>
+</header><div class="wrap">
 <p class="breadcrumb"><a href="index.html">Home</a> → Blocked Drains & Toilets</p>
 <div class="split"><div><span class="pill">Blocked Drain Rescue NW • Preston & North West</span><h1>Blocked Drains & Toilets</h1><p class="lead">Blocked drain, overflowing manhole or toilet that won’t flush? We clear it properly, test it, and tell you why it blocked.</p><ul class="check"><li>Emergency unblocks</li><li>Repeat blockages</li><li>Outside drains & manholes</li><li>Sinks, showers & baths</li></ul><a class="btn" href="contact.html">Get a Free Quote →</a></div><div><img class="card-img" src="cctv.webp" alt="Blocked Drains & Toilets"></div></div>
 <section><h2>What we do on this job</h2><p>We start with a check of the run, clear with rodding and jetting where needed, then flush and flow-test before we leave. If it keeps blocking, we’ll recommend a CCTV survey so you’re not paying for the same unblock every few weeks.</p></section>
